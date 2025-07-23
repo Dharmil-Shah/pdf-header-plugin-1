@@ -1,0 +1,27 @@
+{
+  "name": "Add Header to PDF",
+  "id": "add-header-to-pdf",
+  "description": "Takes a PDF URL and header text, returns a new PDF with the header added.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "run": {
+    "url": "https://example.com/api/run"
+  },
+  "parameters": [
+    {
+      "name": "pdf_url",
+      "type": "string",
+      "required": true,
+      "description": "Public URL of the PDF to modify"
+    },
+    {
+      "name": "header_text",
+      "type": "string",
+      "required": true,
+      "description": "Text to add as header on each page"
+    }
+  ],
+  "output": {
+    "pdf_url": "string"
+  }
+}
