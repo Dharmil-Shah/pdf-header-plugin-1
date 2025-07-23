@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Adds a header text above your original text inside Glide.",
   "icon": "https://www.svgrepo.com/show/491179/header.svg",
-  "entry": "https://YOUR-VERCEL-APP.vercel.app/api/run",
+  "entry": "https://pdf-header-plugin-1.vercel.app/api/run",
   "methods": [
     {
       "name": "run",
