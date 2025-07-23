@@ -1,39 +1,27 @@
 {
-  "name": "Text Header Plugin",
-  "id": "text-header-plugin",
-  "version": "0.0.1",
-  "description": "Adds a header text above your original text inside Glide.",
-  "icon": "https://www.svgrepo.com/show/491179/header.svg",
-  "entry": "https://pdf-header-plugin-1.vercel.app/api/run",
-  "methods": [
+  "name": "Add Header to PDF",
+  "id": "add-header-to-pdf",
+  "description": "Takes a PDF URL and header text, returns a new PDF with the header added.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "run": {
+    "url": "https://example.com/api/run"
+  },
+  "parameters": [
     {
-      "name": "run",
-      "description": "Adds header text above the original text",
-      "parameters": [
-        {
-          "name": "Header Text",
-          "id": "header_text",
-          "type": "string",
-          "required": true
-        },
-        {
-          "name": "Original Text",
-          "id": "original_text",
-          "type": "string",
-          "required": true
-        },
-        {
-          "name": "Separator",
-          "id": "separator",
-          "type": "string",
-          "required": false
-        }
-      ],
-      "result": {
-        "name": "Text With Header",
-        "id": "text_with_header",
-        "type": "string"
-      }
+      "name": "pdf_url",
+      "type": "string",
+      "required": true,
+      "description": "Public URL of the PDF to modify"
+    },
+    {
+      "name": "header_text",
+      "type": "string",
+      "required": true,
+      "description": "Text to add as header on each page"
     }
-  ]
+  ],
+  "output": {
+    "pdf_url": "string"
+  }
 }
